@@ -1,0 +1,474 @@
+
+body.page-template-page-quizzi div#page{
+	max-width:100rem;
+}
+
+body.page-template-page-quizzi div#primary{
+	width:95%;
+}
+
+.chiqm-memory-container{
+	max-width:90% !important;
+}
+
+.chiqm-memory{
+	border: 1px solid blue;
+	background:#ffffdd;
+	padding: 2px;
+	border-radius:5px;
+	display:none;
+}
+
+.chiqm-memory-card{
+	width:26%;
+	min-height:80px;
+	border:1px solid #aaa;
+	border-radius:5px;
+	background:#ffffee;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+	margin:8px;
+	display:inline-block;
+	padding:0;
+}
+
+
+.chiqm-memory-card svg{
+	margin-left:-5px;
+}
+
+.svgwrap{
+	max-width:100%;
+	width:89px;
+	min-height:100px;
+	display:inline-block;
+	position:absolute;
+	top:0;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+.svgwrap.chiqm-asset-text{
+	top:0;
+	font-size:3rem;
+	font-weight:bold;
+}
+
+#gameoverlay {
+  position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2; 
+  cursor: pointer; 
+}
+
+#gameoverlay .verti {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+	width:80%;
+}
+
+#gameoverlay div p{
+	font-size:2.0em;
+	color:yellow;
+	font-weight:bold;
+	text-shadow: 3px 3px 2px #CE5937;
+	line-height:1em;
+}
+
+#gameoverlay .olheader{
+}
+
+#gameoverlay .olcontent{
+	font-size:90%;
+}
+
+.chiqm-row{
+	clear:both;
+	width:100%;
+	margin-bottom:15px !important;
+	min-height:4em;
+}
+
+
+label[for=numpairs],
+label[for=assetmap]
+{
+	font-weight:bold;
+	font-size:120%;
+}
+
+#numpairs,
+#assetmap
+{
+	margin-left:20px;
+	float:right;
+}
+
+.chiqm-row select{
+	min-width:100%;
+}
+
+
+
+#bmem, #breset{
+	font-size:120%;
+	border:#ccc;
+	width:100%;
+}
+
+#bmem{
+	background:green;
+	color:white;
+	font-weight:bold;
+}
+
+#breset{
+	background:orange;
+	color:white;
+	font-weight:bold;
+}
+
+.chiqm-om{
+}
+
+.chiqm-om-item{
+	margin:5px;
+	padding:3px;
+	background:rgba(230,230,230,0.5);
+	border-radius:5px;
+	border:1px solid #ccc;
+	display:inline-block;
+}
+
+.om-item-left,
+.om-item-right,
+{
+	display: inline-block;
+}
+
+
+.om-item-left{
+	width:30px;
+	display: inline-block;
+	vertical-align:top;
+}
+.om-item-right{
+	max-width:500px;
+	display: inline-block;
+	margin-left:20px;
+	margin-bottom:10px;
+}
+
+.label-chiqm-om-item{
+}
+
+.om-item-info{
+	display:inline-block;
+}
+
+.chiqm-asset-preview{
+	vertical-align:top;
+	width:90px;
+	max-width:90px;
+	max-height:80px;
+	min-height:80px;
+	height:80px;
+	border:1px solid #aaa;
+	border-radius:5px;
+	background:#ffffee;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+	margin:4px;
+	display:inline-block;
+	padding:0;
+}
+
+.chiqm-asset-preview.chiqm-preview-text{
+	font-weight:bold;
+}
+
+.chiqm-asset-preview.chiqm-preview-text div{
+	display:inline-block;
+	margin-top:8px;
+	margin-left:15px;
+	font-size:2.0em;
+}
+
+.chiqm-asset-preview svg{
+	max-width:300px;
+}
+
+.om-item-info.first{
+	font-weight:bold;
+}
+
+.chiqm-first-pair,
+.chiqm-second-pair
+{
+	display:inline-block;
+	border:1px solid #ccc;
+	background:rgba(224,254,255,1);
+	border-radius:4px;
+	padding:3px;
+	margin:2px;
+}
+
+
+.chiqm-memory-donate-container{
+	max-width:100%;
+	border:1px solid #aaa;
+	border-radius:5px;
+	background:#ffffee;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+	margin:4px;
+	padding:5px;
+}
+
+.chiqm-memory-donate-label,
+.chiqm-memory-donate-form{
+	vertical-align:middle;
+	display:inline-block;
+	width:49%;
+}
+
+.chiqm-memory-donate-label{
+	font-weight:bold;
+}
+
+.chiqm-memory-donate-form{
+	text-align:center;
+}
+
+.chiqm-mode{
+
+}
+
+#energymode{
+	margin-left:20px;	
+}
+
+.energy-wrap{
+	border:none;
+	border-left:1px solid #aaa;
+	border-right:1px solid #aaa;
+}
+
+.chiqm-energy-color,
+.chiqm-energy-value{
+	height: 18px;
+	display:block;
+}
+
+.chiqm-energy-color{
+	width: 100%;
+	background: rgb(255,0,0);
+	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(250,245,0,1) 25%, rgba(251,255,0,1) 50%, rgba(178,242,0,1) 75%, rgba(89,255,0,1) 100%);
+	border: none;
+}
+
+.chiqm-energy-value{
+	width: 0%;
+	margin-left:100%;
+	background:#eee;
+	margin-top:-18px;
+	border: none;
+}
+
+.chiqm-energy-top,
+.chiqm-energy-bottom{
+	width:100%;
+	height:3px;
+	z-index:3;
+	background:#eee;
+	display:block;
+}
+
+.chiqm-energy-top{
+	margin-top:-18px;
+	border-top:1px solid #aaa;
+}
+
+.chiqm-energy-bottom{
+	margin-top:12px;
+	border-bottom:1px solid #aaa;
+}
+
+.chiqm-energy-display{
+	font-family:monospace;
+	width:100%;
+	height:18px;
+	margin-top:-18px;
+	font-size:0.76rem;
+	text-align:right;
+	padding-right:20px;
+	margin-left:-20px;
+	font-weight:bold;
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 959px) {
+
+	.chiqm-memory-card{
+		width:16%;
+		min-height:80px;
+		border:1px solid #aaa;
+		border-radius:5px;
+		background:#ffffee;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+		margin:8px;
+		display:inline-block;
+		padding:0;
+	}
+
+	#gameoverlay .verti {
+		width:60%;
+	}
+
+
+	#gameoverlay div p{
+		font-size:2rem;
+	}
+	
+	#gameoverlay .olheader{
+	}
+
+
+	#gameoverlay .olcontent{
+		font-size:80%;
+	}
+
+
+}
+
+
+@media screen and (min-width: 960px) {
+
+	body.page-template-page-quizzi div#page{
+		background:none;
+		margin-top:0px;
+	}
+
+	body.page-template-page-quizzi div#page #masthead{
+		display:none;
+	}
+
+
+	.chiqm-row{
+	}
+
+	div.chiqm-row{
+		min-height:2em;
+		display:inline-block;
+	}
+
+
+	.chiqm-row select{
+		min-width:30px;
+		width:300px;
+	}
+
+	.chiqm-row button{
+		width:100%;
+	}
+
+	#gameoverlay .verti {
+		width:60%;
+	}
+
+
+	#gameoverlay div p{
+		font-size:4em;
+	}
+	
+	#gameoverlay .olheader{
+	}
+
+
+	#gameoverlay .olcontent{
+		font-size:80%;
+	}
+
+	#bmem, #breset{
+		font-size:120%;
+	}
+
+	.chiqm-memory-card{
+		width:180px;
+		min-height:160px;
+		border:1px solid #aaa;
+		border-radius:5px;
+		background:#ffffee;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+		margin:8px;
+		display:inline-block;
+		padding:0;
+	}
+
+
+	.chiqm-memory-card svg{
+		margin-left:20px;
+	}
+
+	.svgwrap{
+		max-width:100%;
+		width:179px;
+		min-height:130px;
+		display:inline-block;
+		position:absolute;
+		top:18%;
+		text-align:center;
+		margin:0;
+		padding:0;
+	}
+
+	.svgwrap.chiqm-asset-text{
+		top:16px;
+		font-size:5rem;
+		font-weight:bold;
+	}
+
+	.chiqm-asset-preview{
+		width:100px;
+		max-width:100px;
+		max-height:110px;
+		min-height:110px;
+		height:110px;
+		margin:8px;
+		display:inline-block;
+	}
+
+	.chiqm-asset-preview.chiqm-preview-text{
+	}
+
+	.chiqm-asset-preview.chiqm-preview-text div{
+		display:inline-block;
+		margin-top:8px;
+		margin-left:15px;
+		font-size:2.0em;
+	}
+
+	.chiqm-asset-preview svg{
+		max-width:100%;
+	}
+
+	.chiqm-memory-donate-container{
+		width:593px;
+		max-width:593px;
+		padding:5px;
+		padding-left:0;
+		margin-left:0;
+	}
+	.chiqm-memory-donate-label{
+		margin-left:5px;
+	}
+}

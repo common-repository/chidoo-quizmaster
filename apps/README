@@ -1,0 +1,66 @@
+Creating custom apps
+====================
+
+1. A chidoo quizmaster app must derive from ChiQmApp.
+
+2. All standard chiqm apps reside within the plugin's app subfolder.
+   Custom apps can reside anywhere accessible by your wp installation.
+   You need to define the custom app directory in the quizmaster backend.
+   Note that the custom app folder must be named `apps`.
+
+3. Necessary minimum minimum file structure:
+
+App folder and class file name must be named after the app slug. 
+It's a good advice to choose an individual app slug name:
+
+Slug: my-app
+
+(DIR)  my-app/
+(DIR)  my-app/css
+(FILE) my-app/css/my-app.css
+(DIR)  my-app/js
+(FILE) my-app/js/my-app.js
+(FILE) my-app/my-app.php
+(FILE) my-app/index.php // should be empty ...
+
+Example contents of my-app/my-app.php:
+---
+
+require_once( CHIQM_PLUGIN_PATH.'includes/class-chiqm-app.php');
+
+class MyApp extends ChiQmApp
+{
+  public function __construct() {
+    /* necessary fields */
+    $this->slug = "my-app";
+    $this->name = "My Fancy Application";
+    $this->version = '0.0.1';
+    $this->author = 'Your Name <your-email@your-domain.com>';
+    $this->description = 'This is a super-fancy application.';
+   
+		$this->setShortcodeName('my_app_shortcode');
+    $this->setShortcodeHandler('my_app_shortcode_handler');
+  }
+
+  public function my_app_shortcode_handler($atts){
+    return "Hi from ".$this->getName().", I'm shortcode " . 
+		  $this->getShortcodeName()." performing " . 
+			$this->getShortcodeHandler().".";
+  }
+}
+
+---
+
+Have a look at ChiQmApp::register_ajax_callbacks in 
+`/chidoo-quizmaster/includes/class-chiqm-app.php`
+how to register individual ajax callbacks for your app.
+
+Also, have a look at the available apps how to handle l10n, JavaScript, CSS
+and Ajax requests from within a single app.
+
+Q: Why activation an deactivation of single apps?
+
+A: An app and all its files and assets are only loaded if a) its shordcode is
+placed on a page AND b) if it is in activated state which is an advantage if 
+there were multiple apps available.
+

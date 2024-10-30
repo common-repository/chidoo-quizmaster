@@ -1,0 +1,19 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.app-item{
+	padding: 5px;
+	margin-bottom:20px;
+	border: 1px solid #ccc;
+	background: #fefefe;
+}
+
+.app-item .app-name{
+	font-weight:bold;
+}
+
+.app-item .app-info{
+	font-weight:normal;
+}
